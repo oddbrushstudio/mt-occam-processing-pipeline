@@ -11,10 +11,6 @@ A portable, reusable pipeline for 2D Magnetotelluric inversion using **MTpy v2**
 conda env create -f mtpy_env.yml
 conda activate mtpy
 ```
-Or with pip:
-```bash
-pip install mtpy-v2
-```
 
 ### 2. Edit `config.py`
 Open `config.py` and set the **three path variables** at the top:
