@@ -92,7 +92,7 @@ Review the output plots and note the geoelectric strike angle from `strike_analy
 conda activate mt_v1
 cd mt_occam2d_v1
 ```
-Edit `config.py` with your paths and set `GEOELECTRIC_STRIKE` from Step 1, then:
+Edit `config.py` with your paths — set `SAVE_PATH` to the folder where your `occam2d.exe` binary is located, and set `GEOELECTRIC_STRIKE` from Step 1, then:
 ```bash
 python 01_write_data.py
 python 02_build_mesh.py
