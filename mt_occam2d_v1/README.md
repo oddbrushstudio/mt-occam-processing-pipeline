@@ -15,15 +15,23 @@ Import the conda environment exported from the original machine:
 conda env create -f mt_v1.yml
 conda activate mt_v1
 ```
+Or if you received a `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
 
 ### 2. Configure your paths and parameters
 **Open `config.py` and edit the three path variables at the top:**
 
 ```python
-EDI_PATH            = r"C:\path\to\your\edi_files"
-SAVE_PATH           = r"C:\path\to\your\output_folder"
-OCCAM_RESULTS_PATH  = r"C:\path\to\your\occam2d_results"
+EDI_PATH     = r"C:\path\to\your\edi_files"
+SAVE_PATH    = r"C:\path\to\your\occam2d_binary_folder"
+OUTPUT_PATH  = r"C:\path\to\your\output_folder"
 ```
+
+- `EDI_PATH` — folder containing your `.edi` files
+- `SAVE_PATH` — folder where your `occam2d.exe` binary is located. Input files are written here and the binary runs from here.
+- `OUTPUT_PATH` — folder where all plots, maps and result images are saved.
 
 Everything else (error floors, mesh parameters, inversion settings) can also be adjusted in `config.py`. You only ever need to edit this one file.
 
