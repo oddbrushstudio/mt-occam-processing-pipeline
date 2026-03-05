@@ -8,20 +8,29 @@ MT Occam2D — Shared Configuration
 ==================================
 Edit the paths and parameters below, then run any script in this folder.
 All scripts import from here so you only need to change things in one place.
+
+PATH SETUP:
+  EDI_PATH    — folder containing your .edi files
+  SAVE_PATH   — folder where your occam2d binary is located.
+                Input files (OccamDataFile.dat, mesh, startup) are written
+                here so the binary can find them. Place occam2d.exe here
+                and run it from this folder.
+  OUTPUT_PATH — folder where all plots, maps and result images are saved.
 """
 
 import os
 from pathlib import Path
 
 # ── PATHS ──────────────────────────────────────────────────────────────────
+
 # Folder containing your .edi files
 EDI_PATH = Path(r"C:\path\to\your\edi_files")
 
-# Folder where all outputs will be saved (created automatically if missing)
-SAVE_PATH  = Path(r"C:\path\to\your\output_folder")
+# Folder where your occam2d binary is located — input files are written here
+SAVE_PATH = Path(r"C:\path\to\your\occam2d_binary_folder")
 
-# Folder where OCCAM2D binary results are stored (ITER/RESP files)
-OCCAM_RESULTS_PATH  = Path(r"C:\path\to\your\occam2d_results")
+# Folder where all output plots and maps are saved
+OUTPUT_PATH = Path(r"C:\path\to\your\output_folder")
 
 # ── DATA PARAMETERS ────────────────────────────────────────────────────────
 GEOELECTRIC_STRIKE = 30       # Strike angle in degrees
@@ -47,10 +56,6 @@ ITERATIONS_TO_RUN  = 30       # Maximum number of iterations
 TARGET_MISFIT      = 1.0      # Target RMS misfit
 
 # ── TRIMMING — Period cutoffs per station (seconds) ────────────────────────
-# Data with period > cutoff will be removed for that station.
-# Use float('inf') to keep all periods for a station.
-# Keys are 1-based station indices as they appear in OccamDataFile.dat.
-# Example: {1: float('inf'), 2: 0.5, 3: 500.0}
 TRIM_CUTOFFS = {
     1: float('inf'),
     2: float('inf'),
@@ -60,7 +65,7 @@ TRIM_CUTOFFS = {
 }
 
 # Station index → name mapping (used in trim reports and verification plots)
-STATION_NAMES = {}   # e.g. {1: 'SG2201', 2: 'SG2203'} — auto-filled if left empty
+STATION_NAMES = {}   # e.g. {1: 'SG2201', 2: 'SG2203'}
 
 # ── PLOT PARAMETERS ────────────────────────────────────────────────────────
 PLOT_DEPTH_SCALE   = 'km'     # 'km' or 'm'
@@ -68,8 +73,10 @@ PLOT_CLIMITS       = (0, 4)   # Colour limits for resistivity model (log10)
 PLOT_CMAP          = 'jet_r'  # Matplotlib colormap name
 
 # ── DERIVED PATHS (do not edit) ────────────────────────────────────────────
-Path(SAVE_PATH).mkdir(parents=True, exist_ok=True)
+SAVE_PATH.mkdir(parents=True, exist_ok=True)
+OUTPUT_PATH.mkdir(parents=True, exist_ok=True)
 
-DATA_FILE         = os.path.join(SAVE_PATH, "OccamDataFile.dat")
-TRIMMED_DATA_FILE = os.path.join(SAVE_PATH, "OccamDataFile_trimmed.dat")
-TRIM_VERIFY_PLOT  = os.path.join(SAVE_PATH, "trim_verification.png")
+OCCAM_RESULTS_PATH = SAVE_PATH
+DATA_FILE          = os.path.join(SAVE_PATH, "OccamDataFile.dat")
+TRIMMED_DATA_FILE  = os.path.join(SAVE_PATH, "OccamDataFile_trimmed.dat")
+TRIM_VERIFY_PLOT   = os.path.join(OUTPUT_PATH, "trim_verification.png")
