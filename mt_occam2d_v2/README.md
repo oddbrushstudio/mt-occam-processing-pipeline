@@ -14,10 +14,6 @@ A portable, reusable pipeline for Magnetotelluric data loading and exploration u
 conda env create -f mt_v2.yml
 conda activate mt_v2
 ```
-Or with pip:
-```bash
-pip install mtpy-v2
-```
 
 ### 2. Edit `config.py`
 Open `config.py` and set the two path variables:
