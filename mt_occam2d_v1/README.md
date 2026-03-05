@@ -15,10 +15,6 @@ Import the conda environment exported from the original machine:
 conda env create -f mt_v1.yml
 conda activate mt_v1
 ```
-Or if you received a `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
 
 ### 2. Configure your paths and parameters
 **Open `config.py` and edit the three path variables at the top:**
