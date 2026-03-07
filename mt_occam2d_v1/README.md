@@ -1,8 +1,5 @@
 # MT Occam2D — MTpy v1 Pipeline
 
-**Author:** Oseni Olaonipekun  
-**Contact:** oddbrushstudio@gmail.com
-
 A portable, reusable pipeline for 2D Magnetotelluric inversion using MTpy and Occam2D.
 
 ---
@@ -91,3 +88,5 @@ mt_occam2d_v1/
 ├── README.md
 └── mt_v1.yml
 ```
+**Author:** Oseni Olaonipekun  
+**Contact:** oddbrushstudio@gmail.com
