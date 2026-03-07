@@ -1,8 +1,5 @@
 # MT Occam2D Processing Pipeline
 
-**Author:** Oseni Olaonipekun  
-**Contact:** oddbrushstudio@gmail.com
-
 A portable, config-driven pipeline for Magnetotelluric (MT) data processing and 2D inversion, built on MTpy and Occam2D. The repository is organized into two pipelines that work together — V2 for data loading and exploration, V1 for inversion.
 
 ---
@@ -132,3 +129,7 @@ python 05_plot_results.py
 - Each pipeline has its own `config.py` — all parameters for that pipeline live there. You only ever need to edit `config.py`.
 - The V2 inversion API is still under active development. V1 is used for all inversion input file preparation and result plotting.
 - See the README inside each folder for pipeline-specific instructions.
+
+
+**Author:** Oseni Olaonipekun  
+**Contact:** oddbrushstudio@gmail.com
