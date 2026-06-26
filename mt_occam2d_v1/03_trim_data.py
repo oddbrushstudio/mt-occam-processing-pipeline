@@ -1,11 +1,4 @@
 """
-================================================================================
-Author  : Oseni Olaonipekun
-Contact : oddbrushstudio@gmail.com
-================================================================================
-
-STEP 3 — Trim Bad Frequency Ranges from Data File
-===================================================
 Removes data points with periods exceeding per-station cutoffs
 defined in config.py → TRIM_CUTOFFS.
 
