@@ -132,4 +132,4 @@ python 05_plot_results.py
 
 
 **Author:** Oseni Olaonipekun  
-**Contact:** oseniolaonipekun@gmail.com
+**Contact:** olainmotion@gmail.com
