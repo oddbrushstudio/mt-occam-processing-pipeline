@@ -1,7 +1,7 @@
 # MT Occam2D — MTpy v2 Pipeline
 
 **Author:** Oseni Olaonipekun  
-**Contact:** oseniolaonipekun@gmail.com
+**Contact:** olainmotion@gmail.com
 
 A portable, reusable pipeline for Magnetotelluric data loading and exploration using **MTpy v2** (`MTCollection` / `MTData` API).
 
