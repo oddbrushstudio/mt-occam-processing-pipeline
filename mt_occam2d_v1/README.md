@@ -89,4 +89,4 @@ mt_occam2d_v1/
 └── mt_v1.yml
 ```
 **Author:** Oseni Olaonipekun  
-**Contact:** oddbrushstudio@gmail.com
+**Contact:** olainmotion@gmail.com
