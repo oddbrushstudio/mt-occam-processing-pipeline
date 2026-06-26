@@ -1,10 +1,4 @@
 """
-================================================================================
-Author  : Oseni Olaonipekun
-Contact : oddbrushstudio@gmail.com
-================================================================================
-
-STEP 1 — Write Occam2D Data File
 =================================
 Reads all .edi files in EDI_PATH and writes OccamDataFile.dat to SAVE_PATH.
 
