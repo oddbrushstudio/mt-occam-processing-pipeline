@@ -1,11 +1,4 @@
 """
-================================================================================
-Author  : Oseni Olaonipekun
-Contact : oddbrushstudio@gmail.com
-================================================================================
-
-STEP 4 — Verify Trim (Visual Check)
-=====================================
 Plots kept (blue) vs removed (red) data points per station and per
 data type. Run after 03_trim_data.py to confirm trimming looks correct.
 
