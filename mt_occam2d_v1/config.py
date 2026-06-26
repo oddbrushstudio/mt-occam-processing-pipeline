@@ -1,9 +1,4 @@
 """
-================================================================================
-Author  : Oseni Olaonipekun
-Contact : oddbrushstudio@gmail.com
-================================================================================
-
 MT Occam2D — Shared Configuration
 ==================================
 Edit the paths and parameters below, then run any script in this folder.
