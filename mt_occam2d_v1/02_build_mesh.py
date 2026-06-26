@@ -1,11 +1,4 @@
 """
-================================================================================
-Author  : Oseni Olaonipekun
-Contact : oddbrushstudio@gmail.com
-================================================================================
-
-STEP 2 — Build Mesh, Regularization & Startup File
-====================================================
 Reads the data file written in Step 1 and produces:
   • MESH file
   • Regularization file
